@@ -1,0 +1,10 @@
+<div class="org-manage">
+    <div class="titile-text" data-bind="text: textStr"></div>
+    <p>observable object</p>
+    <button data-bind="event: {click: changeOrgName}">修改组织名</button>
+    <!-- 当对象值改变时，通过if来更新视图, 不到山穷水尽不得使用 -->
+    <div class="obj-datas" data-bind="if: showObjDatas">
+        <div class="obj-item" data-bind="text: objData().orgName"></div>
+        <div class="obj-item" data-bind="text: objData().orgCode"></div>
+    </div>
+</div>

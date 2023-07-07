@@ -1,0 +1,13 @@
+.sys-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.sys-header .header-lef{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: cadetblue;
+}
+.sys-header .header-right{
+    color: rgb(192, 5, 205);
+}

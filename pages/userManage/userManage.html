@@ -1,0 +1,9 @@
+<div class="user-manage">
+    <div class="title-text" data-bind="text: textStr"></div>
+    <button data-bind="event: {click: refreshUser}">刷新用户</button>
+    <div class="user-list">
+        <div class="user-item" data-bind="foreach: userList">
+            <div class="user-name" data-bind="text: name"></div>
+        </div>
+    </div>
+</div>

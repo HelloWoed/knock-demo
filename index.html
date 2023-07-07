@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KNOCKOUT-TEST</title>
+    <script type="text/javascript" src="./lib/knockout-3.5.1.js"></script>
+    <style>
+        html, body, #app{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="app" componentId="appContent" data-bind="component: {name: 'pages-pageBase', params: {type: 'base'}}"></div>
+    <script src="./lib/require.js" data-main="./main.js"></script>
+    <script>
+        require.config({
+            baseUrl: './',
+            waitSeconds: 60
+        });
+        require.onError = (err) => {
+            console.log(err);
+        }
+    </script>
+</body>
+</html>

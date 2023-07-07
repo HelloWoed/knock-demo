@@ -1,0 +1,8 @@
+<div class="sys-sider">
+    <div class="sys-sider-title" data-bind="text: textStr"></div>
+    <div class="sider-content">
+        <div class="menu-item" data-bind="foreach: menuList">
+            <div class="menu-item-title" data-bind="text: name, click: function(){$parent.handleMenuClick($data)}, css: {'menu-actived': $parent.activeMenuPath() == $data.path}"></div>
+        </div>
+    </div>
+</div>

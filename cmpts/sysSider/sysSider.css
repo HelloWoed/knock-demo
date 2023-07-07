@@ -1,0 +1,30 @@
+.sys-sider{
+    height: 100%;
+}
+.sys-sider-title{
+    height: 40px;
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: rgb(14, 208, 94);
+    box-sizing: border-box;
+    text-align: center;
+}
+.sider-content{
+    height: calc(100% - 40px);
+    box-sizing: border-box;
+}
+.sider-content .menu-item{
+    padding: 6px 0;
+}
+.sider-content .menu-item .menu-item-title{
+    color: beige;
+    cursor: pointer;
+    padding: 8px;
+}
+.sider-content .menu-item .menu-item-title:hover{
+    background-color: brown;
+}
+.sider-content .menu-item .menu-item-title.menu-actived{
+    background-color: brown;
+}
